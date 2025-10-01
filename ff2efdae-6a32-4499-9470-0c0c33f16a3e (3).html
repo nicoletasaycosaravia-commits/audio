@@ -50,7 +50,7 @@
   </button>
 </div>
 
-<audio id="bgMusic" src="file:///C:/Users/W10/Downloads/Emilia,%20Rusherking%20-%20De%20Enero%20a%20Diciembre%20(Letra_Lyrics)%20-%20LatinNow.mp3" preload="auto"></audio>
+<audio id="audio" src="Emilia, Rusherking - De Enero a Diciembre (Letra_Lyrics) - LatinNow.mp3" preload="auto"></audio>
 
 <canvas id="galaxy-canvas"></canvas>
 
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
   btn.addEventListener('click', function() {
     modal.style.display = 'none';
     // Reproducir música (manejo de autoplay)
-    music.volume = 0.7;
+    music.volume = 0.9;
     music.currentTime = 0;
     const playPromise = music.play();
     if (playPromise !== undefined) {
